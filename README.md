@@ -47,7 +47,7 @@ During an active patrol, officers can switch between supported assignments while
 
 - General Patrol
 - Warrant Services Unit — WSU
-- Wilderness Law Response — WLR
+- Wildlife Rangers — WLR
 - Criminal Investigations Division — CID
 - Traffic Enforcement Division — TED
 - Canine / K9
