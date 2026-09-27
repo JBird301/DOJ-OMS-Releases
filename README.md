@@ -191,6 +191,20 @@ Future releases can be installed through the integrated DOJ OMS update system.
 
 ---
 
+### Initial Release & Future Development
+
+The initial **v1.0.0 release currently supports the Blaine County Sheriff's Office (BCSO) only.** Support for additional DOJRP departments is planned for future releases as DOJ OMS continues to be developed and expanded.
+
+Feedback, bug reports, and feature suggestions are encouraged and will help guide future updates.
+
+### Support
+
+For assistance with DOJ OMS, bug reports, or other support requests, contact me directly on Discord:
+
+**Discord: `theburdengames`**
+
+---
+
 ### DOJRP Operations Management System
 
 Built for streamlined DOJRP patrol operations.
