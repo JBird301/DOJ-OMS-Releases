@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="screenshots/doj-oms-banner.png" alt="DOJRP Operations Management System" width="100%">
+</p>
+
 # DOJ OMS
 
 ### DOJRP Operations Management System
