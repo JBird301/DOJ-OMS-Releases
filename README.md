@@ -10,7 +10,7 @@
 
 DOJ OMS brings patrol tracking, subdivision assignments, patrol history, statistics, CAD access, Penal Code references, citation preparation, and officer information together in one standalone desktop application.
 
-> **Current Release:** v1.0.0  
+> **Current Release:** v1.1.0  
 > **Platform:** Windows 10 / Windows 11  
 > **Release Channel:** Stable
 
@@ -185,7 +185,7 @@ Return to the Dashboard and select **START BCSO PATROL**.
 
 ## Current Version
 
-**DOJ OMS v1.0.0 — Stable**
+**DOJ OMS v1.1.0 — Stable**
 
 Future releases can be installed through the integrated DOJ OMS update system.
 
