@@ -8,9 +8,9 @@ DOJ OMS brings the tools commonly used during DOJRP law enforcement operations i
 
 Rather than keeping patrol tracking, department resources, CAD access, Penal Code references, report preparation, statistics, and officer information scattered across multiple locations, DOJ OMS provides a single workspace designed around the active officer and their department.
 
-> **Current Release:** v1.4.0
-> **Platform:** Windows 10 / Windows 11
-> **Release Channel:** Stable
+> **Current Release:** v1.4.1  
+> **Platform:** Windows 10 / Windows 11  
+> **Release Channel:** Stable  
 > **Supported Departments:** BCSO & SAHP
 
 ---
@@ -61,6 +61,8 @@ Current functionality includes:
 
 The goal is simple: **reduce the number of separate resources an officer needs to manage while providing a cleaner workspace for day-to-day DOJRP operations.**
 
+![DOJ OMS Dashboard](screenshots/dashboard.png)
+
 ---
 
 # Supported Departments
@@ -84,7 +86,7 @@ BCSO Officer Profiles automatically receive the appropriate department resources
 
 ## San Andreas Highway Patrol
 
-DOJ OMS v1.4.0 introduces full support for the **San Andreas Highway Patrol (SAHP)**.
+DOJ OMS v1.4.0 introduced full support for the **San Andreas Highway Patrol (SAHP)**.
 
 Supported SAHP assignments include:
 
@@ -110,7 +112,7 @@ From the Dashboard, officers can quickly review their current profile and patrol
 
 Quick Resources automatically adapt to the active Officer Profile's department.
 
-
+![DOJ OMS Operations Dashboard](screenshots/dashboard.png)
 
 ---
 
@@ -169,7 +171,7 @@ DOJ OMS independently tracks time spent within supported assignments while maint
 
 Available assignments automatically change according to the active Officer Profile's department.
 
-
+![DOJ OMS Patrol Management](screenshots/patrol.png)
 
 ---
 
@@ -193,7 +195,7 @@ Patrol History provides a centralized location for reviewing previous sessions a
 
 Because patrol history is associated with individual Officer Profiles, users with multiple profiles can maintain separate operational histories within the same DOJ OMS installation.
 
-
+![DOJ OMS Patrol History](screenshots/history.png)
 
 ---
 
@@ -212,7 +214,7 @@ Statistics include information such as:
 
 Statistics remain associated with the Officer Profile responsible for the patrol activity.
 
-
+![DOJ OMS Patrol Statistics](screenshots/statistics.png)
 
 ---
 
@@ -272,7 +274,7 @@ DOJ OMS provides quick access to the official DOJRP Computer Aided Dispatch syst
 
 This reduces the need to separately locate commonly used DOJRP services while working through the application.
 
-
+![DOJ OMS CAD Access](screenshots/cad.png)
 
 ---
 
@@ -286,7 +288,7 @@ Instead, officers can maintain local reference entries for information they are 
 
 Local Penal Code information can also be used by supported features such as the Report Builder.
 
-
+![DOJ OMS Penal Code Reference](screenshots/penal-code.png)
 
 ---
 
@@ -323,7 +325,7 @@ Prepared information can then be copied for transfer into the appropriate DOJRP 
 
 The Report Builder automatically adapts officer information and department presentation according to the active Officer Profile.
 
-
+![DOJ OMS Report Builder](screenshots/citation-builder.png)
 
 ---
 
@@ -374,6 +376,8 @@ The Support Center provides access to supported help material, frequently asked 
 
 Support functionality will continue to expand alongside DOJ OMS.
 
+![DOJ OMS Support Center](screenshots/support-center.PNG)
+
 ---
 
 # Automatic Updates
@@ -406,9 +410,9 @@ is maintained locally unless the user explicitly uses functionality that submits
 
 # System Requirements
 
-**Operating System:** Windows 10 or Windows 11
-**Internet:** Required for online DOJRP resources, verification, external services, and update checking
-**Installation:** Standard Windows installation
+**Operating System:** Windows 10 or Windows 11  
+**Internet:** Required for online DOJRP resources, verification, external services, and update checking  
+**Installation:** Standard Windows installation  
 **Discord:** Optional
 
 ---
@@ -439,11 +443,11 @@ Use the Dashboard to access patrol functionality, department resources, reportin
 
 # Current Version
 
-**DOJ OMS v1.4.0 — Stable**
+**DOJ OMS v1.4.1 — Stable**
 
-v1.4.0 currently provides operational support for:
+v1.4.1 currently provides operational support for:
 
-**Blaine County Sheriff's Office**
+**Blaine County Sheriff's Office**  
 **San Andreas Highway Patrol**
 
 DOJ OMS remains under active development, with additional functionality and department support planned for future releases.
