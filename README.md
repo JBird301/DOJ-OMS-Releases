@@ -61,8 +61,6 @@ Current functionality includes:
 
 The goal is simple: **reduce the number of separate resources an officer needs to manage while providing a cleaner workspace for day-to-day DOJRP operations.**
 
-![DOJ OMS Dashboard](screenshots/dashboard.png)
-
 ---
 
 # Supported Departments
