@@ -8,7 +8,7 @@ DOJ OMS brings the tools commonly used during DOJRP law enforcement operations i
 
 Rather than keeping patrol tracking, Career Progression, department resources, CAD access, Penal Code references, report preparation, statistics, and officer information scattered across multiple locations, DOJ OMS provides a single workspace designed around the active officer and their department.
 
-> **Current Release:** v1.6.0  
+> **Current Release:** v1.6.1  
 > **Platform:** Windows 10 / Windows 11  
 > **Release Channel:** Stable  
 > **Supported Departments:** BCSO, SAHP & LSPD
@@ -733,9 +733,9 @@ Use the Dashboard to access patrol functionality, Career Progression, department
 
 # Current Version
 
-**DOJ OMS v1.6.0 — Stable**
+**DOJ OMS v1.6.1 — Stable**
 
-v1.6.0 provides operational and Career Progression support for:
+v1.6.1 provides operational and Career Progression support for:
 
 **Blaine County Sheriff's Office**  
 **San Andreas Highway Patrol**  
