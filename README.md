@@ -2,16 +2,16 @@
 
 ### DOJRP Operations Management System
 
-**A centralized Windows operations workspace built for DOJRP law enforcement members.**
+**A centralized Windows operations workspace built for DOJRP members.**
 
-DOJ OMS brings the tools commonly used during DOJRP law enforcement operations into one standalone desktop application.
+DOJ OMS brings the tools commonly used throughout DOJRP operations into one standalone desktop application.
 
-Rather than keeping patrol tracking, Career Progression, department resources, CAD access, Penal Code references, report preparation, statistics, and officer information scattered across multiple locations, DOJ OMS provides a single workspace designed around the active officer and their department.
+Rather than keeping patrol tracking, Career Progression, department requirements, department resources, CAD access, Penal Code references, report preparation, statistics, and member information scattered across multiple locations, DOJ OMS provides a single workspace designed around the active profile and their department.
 
-> **Current Release:** v1.6.1  
+> **Current Release:** v1.7.0  
 > **Platform:** Windows 10 / Windows 11  
 > **Release Channel:** Stable  
-> **Supported Departments:** BCSO, SAHP & LSPD
+> **Supported Departments:** BCSO, SAHP, LSPD & Civilian Operations
 
 ---
 
@@ -37,26 +37,26 @@ DOJ OMS also includes an integrated update system for detecting future releases.
 
 # What is DOJ OMS?
 
-DOJ OMS is designed to function as an operational companion for DOJRP law enforcement members.
+DOJ OMS is designed to function as a centralized operational companion for DOJRP members across supported departments.
 
-The application adapts around the user's **Officer Profile and department**, allowing one installation to support officers with different assignments, ranks, departments, patrol histories, resources, and career records.
+The application adapts around the user's **Profile and department**, allowing one installation to support members with different assignments, organizations, ranks, departments, patrol histories, resources, and career records.
 
 Current functionality includes:
 
 - Multi-department Officer Profiles
 - Patrol session tracking
-- Department and subdivision assignment tracking
+- Department, subdivision, business, and criminal-organization activity tracking
 - Patrol history
 - Patrol statistics
-- BCSO, SAHP & LSPD Career Progression
+- BCSO, SAHP, LSPD & Civilian Career Progression
 - Rank History
 - Promotion and demotion tracking
 - Training and certification tracking
-- LSPD qualifying activity tracking
+- Department-specific qualifying activity tracking
 - Department patrol-log integration
 - Automatic patrol-log prefilling
 - Automatic patrol-log timezone handling
-- Department-specific resource libraries
+- Department, subdivision, business, and criminal-organization resource libraries
 - Quick Resources
 - Direct DOJRP CAD access
 - Local Penal Code references
@@ -68,13 +68,13 @@ Current functionality includes:
 - Support Center & Help Center
 - Development Board
 
-The goal is simple: **reduce the number of separate resources an officer needs to manage while providing a cleaner workspace for day-to-day DOJRP operations.**
+The goal is simple: **reduce the number of separate resources a DOJRP member needs to manage while providing a cleaner workspace for day-to-day operations.**
 
 ---
 
 # Multi-Department Architecture
 
-DOJ OMS v1.6.0 introduces a centralized multi-department architecture.
+DOJ OMS uses a centralized multi-department architecture.
 
 Rather than building major application systems around individual departments, DOJ OMS can now adapt supported functionality according to the department associated with the active Officer Profile.
 
@@ -89,17 +89,18 @@ Department-aware functionality includes:
 - Patrol Logs
 - Patrol History
 - Statistics
-- Report generation
+- Department-specific report generation where applicable
 
 This architecture allows DOJ OMS to continue expanding without requiring separate applications or disconnected systems for each department.
 
-Current law-enforcement support includes:
+Current department support includes:
 
 - Blaine County Sheriff's Office
 - San Andreas Highway Patrol
 - Los Santos Police Department
+- Civilian Operations
 
-The architecture also establishes the foundation for additional department types in future releases.
+The architecture supports both law-enforcement and Civilian workflows while establishing the foundation for additional department types in future releases.
 
 ---
 
@@ -128,13 +129,14 @@ DOJ OMS provides full operational and Career Progression support for the **San A
 
 Supported SAHP assignments include:
 
+- General Patrol
 - BACO
-- BSO - ISU
-- BSO - K9
-- BTE - ADAT
-- BTE - MBU
-- BTE - CVE
-- BTE - MRU
+- Investigations
+- Canine / K9
+- ADAT — DUI
+- ADAT — MBU
+- CVE
+- MRU
 
 SAHP integration includes department-specific ranks, auxiliary ranks, patrol functionality, resources, Quick Resources, Report Builder presentation, patrol-log formatting, and Career Progression.
 
@@ -171,6 +173,40 @@ DOJ OMS automatically adapts supported LSPD functionality according to the activ
 
 ---
 
+## Civilian Operations
+
+DOJ OMS v1.7.0 introduces full operational and Career Progression support for **Civilian Operations**.
+
+Civilian activity can be tracked through:
+
+- General Civilian
+- Business Organizations
+- Criminal Organizations / Gangs
+
+Civilian integration includes:
+
+- Full-Time and Reserve rank structures
+- Civilian-specific department branding
+- General Civilian patrol tracking
+- Timed Business Organization activity
+- Timed Criminal Organization activity
+- Business-specific branding where available
+- Shared Criminal Organizations branding
+- Patrol History
+- Statistics
+- Career Progression
+- Rank History
+- Department Requirements Reference
+- Civilian Resources
+- Business and Gang resources
+- Civilian Patrol Log integration
+- Patrol Log prefilling and review
+- Civilian-specific Discord Rich Presence
+
+Civilian profiles retain access to applicable shared tools such as CAD and the Penal Code while law-enforcement-only Report Builder functionality is excluded.
+
+---
+
 # Operations Dashboard
 
 The Dashboard serves as the primary operational landing point after selecting an Officer Profile.
@@ -185,9 +221,9 @@ DOJRP CAD can also be opened directly through Dashboard Quick Actions.
 
 ---
 
-# Officer Profiles
+# Profiles
 
-DOJ OMS supports **multiple Officer Profiles** within the same installation.
+DOJ OMS supports **multiple profiles** within the same installation.
 
 Each profile can maintain its own:
 
@@ -202,11 +238,11 @@ Each profile can maintain its own:
 - Rank History
 - Training and certification information
 
-Switching profiles allows DOJ OMS to automatically adapt supported areas of the application to that officer.
+Switching profiles allows DOJ OMS to automatically adapt supported areas of the application to that member.
 
 Department-specific resources, patrol assignments, Report Builder information, Career Progression, and other supported functionality change according to the active profile.
 
-Career information remains isolated to the individual Officer Profile. Multiple profiles can therefore maintain completely independent career and patrol records within the same installation.
+Career information remains isolated to the individual profile. Multiple profiles can therefore maintain completely independent career and patrol records within the same installation.
 
 ---
 
@@ -219,6 +255,7 @@ Career Progression currently supports:
 - Blaine County Sheriff's Office
 - San Andreas Highway Patrol
 - Los Santos Police Department
+- Civilian Operations
 
 Depending on the department and current rank, DOJ OMS can track information including:
 
@@ -260,6 +297,23 @@ When an existing Officer Profile's rank changes, DOJ OMS can detect the change a
 The member can provide the actual effective date of the promotion or demotion before the change is added to Rank History.
 
 Career Progression is a personal tracking tool. DOJ OMS does **not** grant or authorize department promotions.
+
+### Department Requirements Reference
+
+Career Progression also includes a **Department Requirements Reference** for reviewing department standards without changing the active profile's rank or career data.
+
+The reference can display applicable information such as:
+
+- Career path
+- Rank-specific minimum activity
+- Promotion-specific activity
+- Time in grade
+- Training requirements
+- Qualification requirements
+- Department policy notes
+- Administrative or subjective requirements that DOJ OMS cannot automatically evaluate
+
+Supported requirements adapt to BCSO, SAHP, LSPD, and Civilian Operations.
 
 ---
 
@@ -357,6 +411,31 @@ Completion of tracked requirements does **not** guarantee promotion.
 
 ---
 
+# Civilian Career Progression
+
+Civilian Career Progression supports both **Full-Time** and **Reserve** personnel.
+
+Supported tracking includes:
+
+- Current and next rank
+- Time in grade
+- 30-day and 60-day patrol activity where applicable
+- Minimum monthly activity requirements
+- Promotion-specific patrol requirements
+- Civilian Advanced Training
+- Additional training and qualification requirements
+- Rank History
+- Full-Time and Reserve career paths
+- Completed-career handling
+
+The Reserve career path ends at **Senior Civilian Reserve**. Members seeking advancement beyond the Reserve path must transfer to Full-Time status.
+
+The Full-Time career path ends at **Director of Civilian Operations**.
+
+For ranks with objective requirements, DOJ OMS can compare locally tracked information against the applicable requirement. Requirements involving roleplay ability, conduct, leadership, disciplinary standing, administrative review, or other subjective criteria remain informational and are not automatically determined by DOJ OMS.
+
+---
+
 # Member Verification
 
 DOJ OMS includes a member verification system for DOJ members-only application material.
@@ -380,7 +459,7 @@ Verification is designed around DOJRP membership access.
 
 DOJ OMS provides real-time patrol session tracking directly from the desktop application.
 
-Officers can:
+Members can:
 
 - Start a patrol
 - Pause a patrol
@@ -388,9 +467,9 @@ Officers can:
 - Change assignments during a patrol
 - End a patrol
 
-DOJ OMS independently tracks time spent within supported assignments while maintaining the total duration of the patrol.
+DOJ OMS independently tracks time spent within supported assignments or organizations while maintaining the total duration of the patrol.
 
-Available assignments automatically change according to the active Officer Profile's department.
+Available patrol activity automatically changes according to the active profile's department. Civilian Operations can track General Civilian activity as well as timed Business and Criminal Organization activity within the same patrol.
 
 ![DOJ OMS Patrol Management](screenshots/patrol.png)
 
@@ -430,19 +509,35 @@ DOJ OMS can detect tracked Port Authority, Special Intelligence Division, and Tr
 
 Information that cannot be reliably determined by OMS remains for the officer to complete.
 
-Officers should always review the Patrol Log for accuracy before submission.
+### Civilian Operations
 
-Patrol-log functionality is designed to reduce repetitive entry while keeping the officer responsible for the final submission.
+Civilian Patrol Log integration prepares supported information from completed Civilian activity and provides a review step before opening the official Patrol Log.
+
+The review can include:
+
+- General Civilian activity
+- Business Organizations actually patrolled
+- Criminal Organizations actually patrolled
+- Organization activity duration
+- Patrol Area selection
+- Priority selection
+- Supported profile and patrol information
+
+Organizations with no tracked activity are omitted from the Patrol Review.
+
+Members should always review the Patrol Log for accuracy before submission.
+
+Patrol-log functionality is designed to reduce repetitive entry while keeping the member responsible for the final submission.
 
 ---
 
 # Patrol History
 
-Completed patrol sessions are maintained within the active Officer Profile's local patrol history.
+Completed patrol sessions are maintained within the active profile's local patrol history.
 
 Patrol History provides a centralized location for reviewing previous sessions and associated patrol information.
 
-Department branding automatically adapts to the Officer Profile responsible for the patrol.
+Department branding automatically adapts to the profile responsible for the patrol.
 
 Because patrol history is associated with individual Officer Profiles, users with multiple profiles can maintain separate operational histories within the same DOJ OMS installation.
 
@@ -460,13 +555,13 @@ The Statistics interface provides information such as:
 - Total completed patrols
 - Current-month patrol time
 - Current-month patrol count
-- Assignment and subdivision time
-- Assignment activity percentages
+- Assignment, subdivision, business, and criminal-organization time
+- Assignment and organization activity percentages
 - Patrol-log submission information
 
 Statistics can be viewed across supported periods such as **All Time** and **This Month**.
 
-Statistics remain associated with the Officer Profile responsible for the patrol activity.
+Statistics remain associated with the profile responsible for the patrol activity.
 
 ![DOJ OMS Patrol Statistics](screenshots/statistics.png)
 
@@ -516,6 +611,24 @@ External resources open through the user's default browser.
 
 Supported locally packaged resources can be opened directly through DOJ OMS.
 
+### Civilian Operations
+
+Civilian Resources provide organized access to department-wide and organization-specific material, including:
+
+- Civilian SOP and policy resources
+- Promotion and roster information
+- Civilian forms
+- Civilian Portal
+- Scenario and training references
+- Business Operations resources
+- Criminal Organization / Gang resources
+- Individual Business SOPs and structures
+- Office of Fire Investigations resources
+- Commercial Vehicle Enforcement resources
+- Community reference material
+
+External resources open through the user's default browser.
+
 ---
 
 # Quick Resources
@@ -552,7 +665,7 @@ Local Penal Code information can also be used by supported features such as the 
 
 # CAD Report Generator
 
-The DOJ OMS **Report Builder** provides a standardized document-generation workspace designed to complement the DOJRP CAD.
+The DOJ OMS **Report Builder** provides law-enforcement profiles with a standardized document-generation workspace designed to complement the DOJRP CAD.
 
 DOJ OMS does **not** replace the CAD report form.
 
@@ -602,7 +715,7 @@ The generated document can be:
 
 Selecting **COPY COMPLETE REPORT** copies the completed document for direct transfer into the appropriate DOJRP CAD Narrative field.
 
-Report presentation and applicable officer information automatically adapt to the active Officer Profile and department.
+Report presentation and applicable officer information automatically adapt to the active law-enforcement profile and department. Report Builder is not shown for Civilian Operations profiles.
 
 ![DOJ OMS Report Builder](screenshots/citation-builder.png)
 
@@ -612,22 +725,34 @@ Report presentation and applicable officer information automatically adapt to th
 
 DOJ OMS includes optional **Discord Rich Presence** integration.
 
-When enabled, Discord can display information associated with DOJ OMS activity, including the active Officer Profile and patrol state.
+Presence information automatically adapts to the active department and current patrol state.
 
-During active patrols, Rich Presence can reflect information such as:
+### Law Enforcement
+
+During law-enforcement patrols, Rich Presence can reflect supported information such as:
 
 - Active assignment
-- On-duty status
+- Patrol state
 - Patrol activity timing
 
-Pause, Resume, and End Patrol states automatically update supported Discord presence information.
+When not actively tracking a law-enforcement patrol, DOJ OMS can display randomized department-appropriate status messages.
 
-When DOJ OMS is not actively tracking a patrol, the application can display randomized 10-7 status messages.
+### Civilian Operations
+
+Civilian Operations uses a separate Rich Presence experience and does **not** use law-enforcement "On Duty," "Off Duty," or 10-code terminology.
+
+Civilian presence can include:
+
+- Randomized active Civilian status messages
+- Randomized inactive Civilian status messages
+- General Civilian activity
+- Abbreviated Business Organization names
+- Abbreviated Criminal Organization names
+- Civilian-specific pause and activity states
 
 Privacy controls for Discord Rich Presence are available through Settings.
 
 Discord availability is **not required** for normal DOJ OMS operation.
-
 ---
 
 # Settings
@@ -721,41 +846,67 @@ Run the installer and complete the Windows installation process.
 
 Complete the initial DOJRP identity information required by the application.
 
-### 4. Create an Officer Profile
+### 4. Create a Profile
 
-Configure your department, name/unit number, Badge Number / Web ID, rank, timezone, and other supported profile information.
+Configure your department, identity information, Web ID, rank, timezone, and other supported profile information.
 
 ### 5. Start Operating
 
-Use the Dashboard to access patrol functionality, Career Progression, department resources, reporting tools, CAD, Penal Code references, and other supported DOJ OMS features.
+Use the Dashboard to access patrol functionality, Career Progression, department resources, applicable reporting tools, CAD, Penal Code references, and other supported DOJ OMS features.
 
 ---
 
 # Current Version
 
-**DOJ OMS v1.6.1 — Stable**
+**DOJ OMS v1.7.0 — Stable**
 
-v1.6.1 provides operational and Career Progression support for:
+v1.7.0 provides operational and Career Progression support for:
 
 **Blaine County Sheriff's Office**  
 **San Andreas Highway Patrol**  
-**Los Santos Police Department**
+**Los Santos Police Department**  
+**Civilian Operations**
 
-The v1.6.0 release introduces the new multi-department architecture, full LSPD integration, LSPD Career Progression, expanded department resources, LSPD Patrol Log prefilling, the redesigned CAD Report Generator, improved application branding, timezone improvements, and additional application-wide refinements.
+### What's New in v1.7.0
 
-DOJ OMS remains under active development, with additional functionality and department support planned for future releases.
+v1.7.0 expands the multi-department platform introduced in previous releases with full Civilian Operations integration and additional application-wide improvements.
 
+Major additions and changes include:
+
+- Full Civilian Operations department integration
+- Civilian Full-Time and Reserve rank structures
+- Civilian Career Progression and Rank History
+- Civilian Department Requirements Reference
+- General Civilian, Business Organization, and Criminal Organization patrol tracking
+- Civilian Patrol Log integration and prefilling
+- Patrol Area and Priority review for Civilian patrol logs
+- Business-specific and Criminal Organization branding
+- Extensive Civilian, Business, Gang, OFI, and CVE resources
+- Civilian-specific Discord Rich Presence
+- Abbreviated Business and Gang presence names
+- SAHP General Patrol support
+- Expanded department minimum-activity and promotion-requirement references
+- Improved Career Progression scrolling and long-text presentation
+- Improved Civilian patrol-page performance with collapsible organization sections
+- Improved Patrol Review organization and zero-activity filtering
+- Improved Statistics support for larger department activity sets
+- Application-wide dropdown focus handling fixes
+- Additional interface, spacing, scrolling, and quality-of-life improvements
+
+DOJ OMS continues to distinguish between requirements it can objectively track and requirements that depend on department leadership, conduct, roleplay ability, administrative discretion, or other subjective criteria.
+
+---
 ---
 
 # Development
 
-DOJ OMS began as a patrol-management utility and has expanded into a broader operations workspace for DOJRP law enforcement members.
+DOJ OMS began as a patrol-management utility and has expanded into a broader multi-department operations workspace for DOJRP members.
 
 Development is focused on improving everyday usability, consolidating commonly used operational resources, expanding department-specific functionality, and reducing repetitive work where practical.
 
-The multi-department architecture introduced with v1.6.0 establishes the foundation for continued expansion of DOJ OMS while maintaining a unified application experience.
+The multi-department architecture continues to provide the foundation for expanding DOJ OMS across different DOJRP operational roles while maintaining a unified application experience.
 
-Future releases will continue expanding the platform while maintaining compatibility with existing Officer Profiles and locally stored operational information.
+Future releases will continue expanding the platform while maintaining compatibility with existing profiles and locally stored operational information.
 
 Feedback, bug reports, and feature suggestions are encouraged.
 
