@@ -8,7 +8,7 @@ DOJ OMS brings the tools commonly used throughout DOJRP operations into one stan
 
 Rather than keeping patrol tracking, Career Progression, department requirements, department resources, CAD access, Penal Code references, report preparation, statistics, and member information scattered across multiple locations, DOJ OMS provides a single workspace designed around the active profile and their department.
 
-> **Current Release:** v1.7.0  
+> **Current Release:** v2.0.0  
 > **Platform:** Windows 10 / Windows 11  
 > **Release Channel:** Stable  
 > **Supported Departments:** BCSO, SAHP, LSPD & Civilian Operations
@@ -26,12 +26,12 @@ The latest stable version of DOJ OMS is available through the **Releases** secti
 3. Run the installer.
 4. Complete the Windows installation prompts.
 5. Launch **DOJ OMS**.
-6. Complete the initial identity setup.
+6. Complete the v2.0.0 DOJRP membership verification when prompted.
 7. Create or select your Officer Profile.
 
-Existing users can install newer versions directly over their current installation. Supported locally stored profile, patrol, statistics, Career Progression, and application data are preserved during normal upgrades.
+Existing users can install v2.0.0 over their current installation. The modern application is designed to preserve supported locally stored profiles, patrol history, statistics, Career Progression, and application data during normal upgrades. Back up important local data before updating.
 
-DOJ OMS also includes an integrated update system for detecting future releases.
+DOJ OMS includes an integrated update system that notifies users about available releases after profile selection. Users can choose **Later** or **View Release**.
 
 ---
 
@@ -144,7 +144,7 @@ SAHP integration includes department-specific ranks, auxiliary ranks, patrol fun
 
 ## Los Santos Police Department
 
-DOJ OMS v1.6.0 introduces full operational support for the **Los Santos Police Department (LSPD)**.
+DOJ OMS provides operational support for the **Los Santos Police Department (LSPD)**.
 
 Supported LSPD assignments include:
 
@@ -175,7 +175,7 @@ DOJ OMS automatically adapts supported LSPD functionality according to the activ
 
 ## Civilian Operations
 
-DOJ OMS v1.7.0 introduces full operational and Career Progression support for **Civilian Operations**.
+DOJ OMS provides operational and Career Progression support for **Civilian Operations**.
 
 Civilian activity can be tracked through:
 
@@ -207,11 +207,11 @@ Civilian profiles retain access to applicable shared tools such as CAD and the P
 
 ---
 
-# Operations Dashboard
+# Overview Dashboard
 
-The Dashboard serves as the primary operational landing point after selecting an Officer Profile.
+The redesigned Overview Dashboard serves as the primary operational landing point after selecting an Officer Profile.
 
-From the Dashboard, officers can quickly review their current profile and patrol status while accessing commonly used operational tools and department-specific resources.
+From Overview, members can review their active profile and patrol status and access commonly used operational tools and department-specific resources.
 
 Quick Resources automatically adapt to the active Officer Profile's department.
 
@@ -438,11 +438,11 @@ For ranks with objective requirements, DOJ OMS can compare locally tracked infor
 
 # Member Verification
 
-DOJ OMS includes a member verification system for DOJ members-only application material.
+DOJ OMS v2.0.0 includes release-specific DOJRP membership verification for protected department material.
 
-Users provide their DOJRP identity information during initial setup, including their name and website profile.
+Members complete verification for the current application release using their DOJRP identity and website profile. The registration process also records the application version.
 
-Verification information is used to determine access to protected DOJ member resources.
+Verification status is checked automatically and determines access to protected Department Resources. Members whose access is denied or revoked can continue using other OMS features, including the Support Center, while protected resources remain unavailable.
 
 Access can reflect verification states such as:
 
@@ -451,7 +451,7 @@ Access can reflect verification states such as:
 - Denied
 - Revoked
 
-Verification is designed around DOJRP membership access.
+If resource access is denied or revoked, OMS displays an access-restriction explanation and directs members to **Support → Submit Request** to raise a membership concern. Membership decisions are reviewed through the support process.
 
 ---
 
@@ -573,7 +573,7 @@ The Resources module provides organized access to operational material for the a
 
 Instead of maintaining a large collection of bookmarks or repeatedly searching department resources, supported documents and forms can be accessed directly through DOJ OMS.
 
-Resources are organized into department and subdivision-specific sections.
+Resources are organized into department and subdivision-specific sections, with clearer **Documents** and **Forms** groupings where applicable. Access to protected resources requires approved DOJRP membership verification.
 
 ### BCSO
 
@@ -750,6 +750,8 @@ Civilian presence can include:
 - Abbreviated Criminal Organization names
 - Civilian-specific pause and activity states
 
+Discord Rich Presence displays the profile name and unit number without an additional department suffix and includes a **Download OMS** button.
+
 Privacy controls for Discord Rich Presence are available through Settings.
 
 Discord availability is **not required** for normal DOJ OMS operation.
@@ -757,7 +759,7 @@ Discord availability is **not required** for normal DOJ OMS operation.
 
 # Settings
 
-Application configuration is centralized within the DOJ OMS Settings interface.
+Application configuration is centralized within the redesigned DOJ OMS Settings interface.
 
 Settings provide access to supported options including:
 
@@ -765,8 +767,9 @@ Settings provide access to supported options including:
 - Profile switching
 - General application preferences
 - Startup behavior
-- Appearance and interface scaling
+- Appearance accent colors (Classic Blue, Teal, Purple, and Amber)
 - Discord Rich Presence preferences
+- Membership status and verification management
 - Update management
 - Application information
 
@@ -778,13 +781,12 @@ This separates operational functions from application configuration while keepin
 
 DOJ OMS includes an integrated Support Center for application assistance, feedback, and development information.
 
-The Support Center provides access to:
+The redesigned Support Center provides access to:
 
-- Help Center
-- Frequently Asked Questions
-- Submit Request
-- Development Board
-- Manual update checking
+- Help Center and topic-organized Frequently Asked Questions
+- Submit Request for bug reports, feature suggestions, support questions, and membership concerns
+- Development Board with published items, descriptions, versions, and color-coded status indicators
+- Automatic Development Board refresh
 - Application support information
 
 ![DOJ OMS Support Center](screenshots/support-center.PNG)
@@ -795,9 +797,9 @@ The Support Center provides access to:
 
 DOJ OMS includes a built-in update system.
 
-The application checks the official DOJ OMS distribution channel for newer releases and can notify users when an update becomes available.
+The application checks the official DOJ OMS distribution channel for newer releases. After profile selection, an available update appears in a slide-down notification with **Later** and **View Release** actions.
 
-Users can also manually use **Check for Updates** from within the Support Center.
+Manual update checking is also available from application settings.
 
 Existing installations can then be upgraded without requiring users to continually monitor the repository for new versions.
 
@@ -844,58 +846,50 @@ Run the installer and complete the Windows installation process.
 
 ### 3. Verify
 
-Complete the initial DOJRP identity information required by the application.
+Complete the DOJRP membership verification required for v2.0.0. Verification controls access to protected Department Resources.
 
-### 4. Create a Profile
+### 4. Create or Select a Profile
 
 Configure your department, identity information, Web ID, rank, timezone, and other supported profile information.
 
 ### 5. Start Operating
 
-Use the Dashboard to access patrol functionality, Career Progression, department resources, applicable reporting tools, CAD, Penal Code references, and other supported DOJ OMS features.
+Use Overview and the main navigation to access patrol functionality, Career Progression, department resources, the Support Center, applicable reporting tools, CAD, Penal Code references, and other supported DOJ OMS features.
 
 ---
 
 # Current Version
 
-**DOJ OMS v1.7.0 — Stable**
+**DOJ OMS v2.0.0 — Stable**
 
-v1.7.0 provides operational and Career Progression support for:
+v2.0.0 provides operational and Career Progression support for:
 
 **Blaine County Sheriff's Office**  
 **San Andreas Highway Patrol**  
 **Los Santos Police Department**  
 **Civilian Operations**
 
-### What's New in v1.7.0
+### What's New in v2.0.0
 
-v1.7.0 expands the multi-department platform introduced in previous releases with full Civilian Operations integration and additional application-wide improvements.
+v2.0.0 replaces the Classic v1.7.0 interface with a modern PySide6/QML desktop experience while retaining the core multi-department operational tools.
 
-Major additions and changes include:
+Major additions and improvements include:
 
-- Full Civilian Operations department integration
-- Civilian Full-Time and Reserve rank structures
-- Civilian Career Progression and Rank History
-- Civilian Department Requirements Reference
-- General Civilian, Business Organization, and Criminal Organization patrol tracking
-- Civilian Patrol Log integration and prefilling
-- Patrol Area and Priority review for Civilian patrol logs
-- Business-specific and Criminal Organization branding
-- Extensive Civilian, Business, Gang, OFI, and CVE resources
-- Civilian-specific Discord Rich Presence
-- Abbreviated Business and Gang presence names
-- SAHP General Patrol support
-- Expanded department minimum-activity and promotion-requirement references
-- Improved Career Progression scrolling and long-text presentation
-- Improved Civilian patrol-page performance with collapsible organization sections
-- Improved Patrol Review organization and zero-activity filtering
-- Improved Statistics support for larger department activity sets
-- Application-wide dropdown focus handling fixes
-- Additional interface, spacing, scrolling, and quality-of-life improvements
+- Completely redesigned interface, Overview Dashboard, navigation, and profile management
+- Modernized Patrol Operations, Patrol History, Analytics, and Career Progression screens
+- Updated department-specific patrol-log prefilling and time-zone handling
+- Reorganized Department Resources with Documents, Forms, and subdivision groupings
+- Dedicated Support Center with categorized FAQs, request submission, and Development Board
+- Automatically refreshed Development Board information and development status indicators
+- Release-specific membership verification with automatic status refresh
+- Dedicated access-restriction screen for denied or revoked Department Resources access
+- Slide-down update notifications with **Later** and **View Release** actions
+- Selectable interface accent colors: Classic Blue, Teal, Purple, and Amber
+- Updated Discord Rich Presence with profile information and a **Download OMS** button
+- Updated Windows packaging, application identity, and icon handling
 
 DOJ OMS continues to distinguish between requirements it can objectively track and requirements that depend on department leadership, conduct, roleplay ability, administrative discretion, or other subjective criteria.
 
----
 ---
 
 # Development
